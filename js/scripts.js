@@ -65,22 +65,33 @@ $(function() {
 
     var sentenceInput = $("#sentenceInput").val();
     var sentenceArray = sentenceInput.split(" ");
+    var threeChar = [];
 
-    var threeChar = sentenceArray.map(function(word) {
+    sentenceArray.forEach(function(word) {
       if (word.length >= 3) {
-        return word;
+        threeChar.push(word)
       }
 
-    
-
-
-
     });
+    var reversedSentence = threeChar.reverse();
+    var finalSent = reversedSentence.join(" ");
 
-    console.log(threeChar);
+    console.log(finalSent);
 
     e.preventDefault();
   });
+  //
+  // var cardNumber = ["ace","1","2","3","4","5","6","7","8","9","10","Jack","Queen","King"]
+  // var cardSuit = ["Spades","Clubs","Hearts","Diamonds"]
+  //   cardNumber.forEach(function(number){
+  //     cardSuit.forEach(function(suit){
+  //       $("#cardList").append("<li>" + number + "of" + suit"</li>");
+  //     });
+  //
+  //     console.
+  //   });
+  //
+  //
 
 
 });
