@@ -41,4 +41,23 @@ $(function() {
       $("#iceCreamReturn").append("<li>" + flavor + "</li>");
     });
 
+  // Grocery practice
+  $("#finish").click(function(e) {
+  var groceries = ["item1", "item2", "item3"];
+
+    var endGroceries = [];
+    var sorted = endGroceries.toLowerCase();
+    // var order = sorted.toUpperCase();
+    groceries.forEach(function(grocery) {
+      endGroceries.push($("#" + grocery).val());
+
+
+
+
+    });
+
+    console.log(sorted);
+
+    e.preventDefault();
+  });
 });
