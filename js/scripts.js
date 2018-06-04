@@ -46,17 +46,22 @@ $(function() {
   var groceries = ["item1", "item2", "item3"];
 
     var endGroceries = [];
-    var sorted = endGroceries.toLowerCase();
+    // var sorted = endGroceries.toLowerCase();
     // var order = sorted.toUpperCase();
     groceries.forEach(function(grocery) {
-      endGroceries.push($("#" + grocery).val());
-
-
-
+      endGroceries.push($("#" + grocery).val().toUpperCase());
+      return endGroceries.sort();
 
     });
 
-    console.log(sorted);
+    // upperCaseGroceries = function(x){
+    //   return x.toUpperCase();
+    // };
+    //
+    // endGroceries.map(upperCaseGroceries);
+
+    alert(endGroceries);
+    console.log(endGroceries);
 
     e.preventDefault();
   });
