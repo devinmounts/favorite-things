@@ -57,11 +57,30 @@ $(function() {
       $("#groceryReturn").append("<li>" + list + "</li>");
     });
 
+    e.preventDefault();
+  });
+
+// Word Play practice
+  $("#wordSubmit").click(function(e) {
+
+    var sentenceInput = $("#sentenceInput").val();
+    var sentenceArray = sentenceInput.split(" ");
+
+    var threeChar = sentenceArray.map(function(word) {
+      if (word.length >= 3) {
+        return word;
+      }
+
+    
 
 
-    alert(endGroceries);
-    console.log(endGroceries);
+
+    });
+
+    console.log(threeChar);
 
     e.preventDefault();
   });
+
+
 });
