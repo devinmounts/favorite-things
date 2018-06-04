@@ -46,19 +46,18 @@ $(function() {
   var groceries = ["item1", "item2", "item3"];
 
     var endGroceries = [];
-    // var sorted = endGroceries.toLowerCase();
-    // var order = sorted.toUpperCase();
+
     groceries.forEach(function(grocery) {
       endGroceries.push($("#" + grocery).val().toUpperCase());
       return endGroceries.sort();
 
     });
 
-    // upperCaseGroceries = function(x){
-    //   return x.toUpperCase();
-    // };
-    //
-    // endGroceries.map(upperCaseGroceries);
+    endGroceries.forEach(function(list){
+      $("#groceryReturn").append("<li>" + list + "</li>");
+    });
+
+
 
     alert(endGroceries);
     console.log(endGroceries);
