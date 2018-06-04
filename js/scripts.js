@@ -80,18 +80,21 @@ $(function() {
 
     e.preventDefault();
   });
-  //
-  // var cardNumber = ["ace","1","2","3","4","5","6","7","8","9","10","Jack","Queen","King"]
-  // var cardSuit = ["Spades","Clubs","Hearts","Diamonds"]
-  //   cardNumber.forEach(function(number){
-  //     cardSuit.forEach(function(suit){
-  //       $("#cardList").append("<li>" + number + "of" + suit"</li>");
-  //     });
-  //
-  //     console.
-  //   });
-  //
-  //
+
+  $("#cardSubmit").click(function(e) {
+    var cardNumber = ["ace","1","2","3","4","5","6","7","8","9","10","Jack","Queen","King"]
+    var cardSuit = ["Spades","Clubs","Hearts","Diamonds"]
+      cardSuit.forEach(function(suit){
+        cardNumber.forEach(function(number){
+          $("#cardList").append("<li>" + number + " of " + suit + "</li>");
+          });
+
+        });
+
+  e.preventDefault();
+  });
+
+
 
 
 });
