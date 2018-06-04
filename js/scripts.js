@@ -1,3 +1,5 @@
+//This was for Favorite Things practice
+
 function makeArray() {
   var email = $("#inputEmail").val();
   var name = $("#inputName").val();
@@ -16,16 +18,10 @@ function makeArray() {
   //console.log(array1);
   console.log(newArray);
 
-
-  //$("#return").prepend($("<li>")newArray);
-  // newArray.forEach(function(item){
-  //   $("#return").prepend("<li>"+ item + "</li>");
-  // });
-
   for (x=0; x<newArray.length; x++) {
     $("#return").prepend("<li>"+ newArray[x] + "</li>");
   };
-  //$("#return").prepend("<li>"+ newArray + "</li>");
+
 }
 
 
@@ -36,5 +32,13 @@ $(function() {
     event.preventDefault();
     makeArray();
   });
+
+  // Ice Cream Method
+
+  var flavors = ["chocolate", "vanilla", "strawberry"]
+
+    flavors.forEach(function(flavor) {
+      $("#iceCreamReturn").append("<li>" + flavor + "</li>");
+    });
 
 });
