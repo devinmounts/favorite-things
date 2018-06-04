@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src= "https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Favorite Things Form</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="inputEmail">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="inputName">Name</label>
+        <input type="name" class="form-control" id="inputName" placeholder="name">
+      </div>
+      <div class="form-group">
+        <label for="inputColor">Color</label>
+        <input type="text" class="form-control" id="inputColor" placeholder="Color">
+      </div>
+      <div class="form-group">
+        <label for="inputAnimal">Animal</label>
+        <input type="animal" class="form-control" id="inputAnimal" placeholder="Animal">
+      </div>
+      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
 </html>
